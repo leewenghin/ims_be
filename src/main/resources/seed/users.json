@@ -1,0 +1,5 @@
+[
+  { "username": "admin", "password": "admin123", "fullName": "System Admin", "role": "ADMIN", "branchCode": null },
+  { "username": "manager", "password": "manager123", "fullName": "HQ Manager", "role": "MANAGER", "branchCode": "HQ" },
+  { "username": "staff", "password": "staff123", "fullName": "HQ Staff", "role": "STAFF", "branchCode": "HQ" }
+]

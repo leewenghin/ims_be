@@ -1,0 +1,7 @@
+[
+  { "sku": "BEV-001", "barcode": "9556001000011", "name": "Mineral Water 1.5L", "description": "Bottled mineral water", "category": "Beverages", "unit": "bottle", "reorderLevel": 50 },
+  { "sku": "BEV-002", "barcode": "9556001000028", "name": "Orange Juice 1L", "description": "100% orange juice", "category": "Beverages", "unit": "carton", "reorderLevel": 30 },
+  { "sku": "SNK-001", "barcode": "9556001000035", "name": "Potato Chips 150g", "description": "Salted potato chips", "category": "Snacks", "unit": "pack", "reorderLevel": 40 },
+  { "sku": "HHD-001", "barcode": "9556001000042", "name": "Dishwashing Liquid 900ml", "description": "Lemon scented", "category": "Household", "unit": "bottle", "reorderLevel": 20 },
+  { "sku": "STN-001", "barcode": "9556001000059", "name": "A4 Paper 80gsm", "description": "500 sheets per ream", "category": "Stationery", "unit": "ream", "reorderLevel": 10 }
+]
