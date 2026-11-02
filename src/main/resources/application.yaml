@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: ims
+  datasource:
+    url: jdbc:h2:mem:ims;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+debug: true
+
+logging:
+  level:
+    org.springframework.boot.autoconfigure: DEBUG
+    org.springframework.boot.autoconfigure.h2: TRACE
+    org.springframework.web.servlet: DEBUG
+    org.springframework.security: DEBUG
