@@ -1,0 +1,54 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '4.1.2'
+	id 'io.spring.dependency-management' version '1.1.7'
+	id 'org.springdoc.openapi-gradle-plugin' version '1.9.0'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(25)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// REST API
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// JPA and database access
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	
+	// OpenAPI documentation
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.2.0'
+
+	// H2 Web Console - REQUIRED for Spring Boot 4
+	implementation 'org.springframework.boot:spring-boot-h2console:4.1.2'
+
+	// H2 database
+	runtimeOnly 'com.h2database:h2'
+
+    // Database migrations
+    implementation 'org.liquibase:liquibase-core'
+
+	// Lombok annotations
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+	// Testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
